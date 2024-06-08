@@ -1,0 +1,225 @@
+:root{
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: rgb(78, 33, 202);
+    --Persian-blue-circle: rgba(36, 33, 202, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+    font-weight: 500 700 800;
+    font-style: "normal";
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 410px;
+    margin-top: 60px;
+    margin-left: 360px;
+    margin-bottom: 60px;
+    background-color: var(--Pale-blue);
+    font-family: "Hanken Grotesk";      
+}
+
+.firstSection{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 325px;
+    height: 400px;       
+    background-color: var(--Light-royal-blue-background);
+    border: none;
+    border-radius: 25px;    
+}
+
+.divPrincipalFirstSection{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;    
+    color: var(--White);
+    margin: 15px;
+    gap: 20px;
+}
+
+.circleResult{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 140px;
+    height: 140px;
+    margin-left: 70px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--Cobalt-blue);
+}
+
+em{
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.pTextFirstSection{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    color: var(--Light-lavender);
+}
+
+.firstSection h2{
+    color: var(--Light-lavender); 
+}
+
+.pOF{
+    color: var(--Light-lavender);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.divPrincipalSecondSection{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 550px;
+    margin: 15px;
+    gap: 20px;
+}
+
+.secondSection{    
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    height: 400px;
+    margin: 20px 20px 20px 0px;
+    background-color: var(--White);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.h2SecondSection{
+    margin-left: 20px;
+    color: var(--Cobalt-blue);
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    width: 90%;
+    height: 40px;
+    background-color: var(--Pale-blue);
+    border-radius: 8px; 
+    margin-left: 15px;
+}
+
+.imgboxes{
+    margin-left: 10px;
+}
+
+.pboxes{
+    margin-left: 10px;
+}
+
+.pReaction{
+    color: var(--Light-red);
+}
+
+.pMemory{
+    color: var(--Orangey-yellow);
+}
+
+.pVerbal{
+    color: var(--Green-teal);
+}
+
+.pVisual{
+    color: var(--Cobalt-blue);
+}
+
+.result{
+    margin-left: 90px;
+    color: var(--Green-teal);
+}
+
+.resultReaction{
+    margin-left: 75px;
+}
+
+.resultMemory{
+    margin-left: 77px;
+}
+
+.emBoxesResult{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Dark-gray-blue);    
+}
+
+button{
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 13px;  
+    margin-left: 15px;  
+}
+
+button:hover{
+    background-color: var(--Cobalt-blue);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        height: auto;
+        margin-top: 50px;
+        margin-left: 2px;           
+    }
+
+    .secondSection{
+        margin-left: 20px;        
+        margin-top: 0px;
+        border-radius: 25px;
+        
+    }
+}
+
+
